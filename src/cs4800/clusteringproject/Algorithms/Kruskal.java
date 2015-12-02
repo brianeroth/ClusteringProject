@@ -13,10 +13,10 @@ public final class Kruskal {
     UnionFind uf = new UnionFind();
     ArrayList<Edge> edges = new ArrayList<>();
     graph.getVertices().forEach(uf::create);
-    graph.getEdges().stream().filter(e -> uf.find(e.getStart())
+    graph.getEdges().stream().filter(e -> uf.find(e.getStartVertex())
         != uf.find(e.getEnd())).forEach(e -> {
       edges.add(e);
-      uf.union(e.getStart(), e.getEnd());
+      uf.union(e.getStartVertex(), e.getEnd());
     });
     return new UndirectedGraph(edgesToVertices(edges), edges);
   }
@@ -25,7 +25,7 @@ public final class Kruskal {
     HashSet<Vertex> vertices = new HashSet<>();
     ArrayList<Vertex> outVertices = new ArrayList<>();
     for (Edge e : edges) {
-      vertices.add(e.getStart());
+      vertices.add(e.getStartVertex());
       vertices.add(e.getEnd());
     }
     outVertices.addAll(vertices.stream().collect(Collectors.toList()));

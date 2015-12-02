@@ -14,25 +14,25 @@ public final class Main {
   }
 
   public static ArrayList<Vertex> parseFile(String fileName) {
-    ArrayList<Vertex> result = new ArrayList<>();
+    ArrayList<Vertex> vertices = new ArrayList<>();
     try {
       BufferedReader reader = new BufferedReader(new FileReader(fileName));
       String currLine;
       int lineCount = 0;
       while ((currLine = reader.readLine()) != null) {
         if (lineCount >= 96) {
-          ArrayList<Double> r = new ArrayList<>();
+          double[] attributes = new double[19];
           String[] thisLineData = currLine.split(",");
           for (int i = 0; i < 19; i++) {
-            r.add(Double.parseDouble(thisLineData[i]));
+            attributes[i] = Double.parseDouble(thisLineData[i]);
           }
-          result.add(new Vertex(thisLineData[19], r));
+          vertices.add(new Vertex(thisLineData[19], attributes));
         }
         lineCount++;
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return result;
+    return vertices;
   }
 }

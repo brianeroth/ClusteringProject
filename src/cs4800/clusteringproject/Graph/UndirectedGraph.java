@@ -12,7 +12,7 @@ public final class UndirectedGraph {
 
   public UndirectedGraph(ArrayList<Vertex> vertices) {
     this.vertices = vertices;
-    this.edges = this.makeEdges(this.vertices);
+    this.edges = this.createEdges(this.vertices);
   }
 
   public UndirectedGraph(ArrayList<Vertex> vertices, ArrayList<Edge> edges) {
@@ -20,15 +20,31 @@ public final class UndirectedGraph {
     this.edges = edges;
   }
 
+  /**
+   * Gets the vertices of the {@link UndirectedGraph}
+   *
+   * @return the vertices of the {@link UndirectedGraph}
+   */
   public ArrayList<Vertex> getVertices() {
     return this.vertices;
   }
 
+  /**
+   * Gets the edges of the {@link UndirectedGraph}
+   *
+   * @return the edges of the {@link UndirectedGraph}
+   */
   public ArrayList<Edge> getEdges() {
     return this.edges;
   }
 
-  public ArrayList<Edge> makeEdges(ArrayList<Vertex> vertices) {
+  /**
+   * Creates the edges in the {@link UndirectedGraph}
+   *
+   * @param vertices the vertices to make edges from
+   * @return a collection of the edges in the {@link UndirectedGraph}
+   */
+  public ArrayList<Edge> createEdges(ArrayList<Vertex> vertices) {
     ArrayList<Edge> edges = new ArrayList<>();
     for (int i = 0; i < vertices.size(); i++) {
       for (int j = i + 1; j < vertices.size(); j++) {
@@ -40,10 +56,17 @@ public final class UndirectedGraph {
     return edges;
   }
 
-  public double calculateEdgeWeight(Vertex a, Vertex b) {
+  /**
+   * Calculates the weight of an edge
+   *
+   * @param v1 the starting {@link Vertex} of the {@link Edge}
+   * @param v2 the ending {@link Vertex} of the {@link Edge}
+   * @return the weight of the {@link Edge}
+   */
+  public double calculateEdgeWeight(Vertex v1, Vertex v2) {
     double sum = 0;
-    for (int i = 0; i < a.getAttributes().size(); i++) {
-      sum += Math.pow((a.getAttributes().get(i) - b.getAttributes().get(i)), 2);
+    for (int i = 0; i < v1.getAttributes().length; i++) {
+      sum += Math.pow(v1.getAttributes()[i] - v2.getAttributes()[i], 2);
     }
     return Math.sqrt(sum);
   }

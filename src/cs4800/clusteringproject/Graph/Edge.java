@@ -7,18 +7,18 @@ import java.util.Objects;
  */
 public final class Edge implements Comparable {
   private final double weight;
-  private final Vertex start, end;
+  private final Vertex startVertex, endVertex;
 
   /**
    * Constructor for an {@link Edge}
    * @param weight the weight of the {@link Edge}
-   * @param start the starting {@link Vertex} of the {@link Edge}
-   * @param end the ending {@link Vertex} of the {@link Edge}
+   * @param startVertex the starting {@link Vertex} of the {@link Edge}
+   * @param endVertex the ending {@link Vertex} of the {@link Edge}
    */
-  public Edge(double weight, Vertex start, Vertex end) {
+  public Edge(double weight, Vertex startVertex, Vertex endVertex) {
     this.weight = weight;
-    this.start = start;
-    this.end = end;
+    this.startVertex = startVertex;
+    this.endVertex = endVertex;
   }
 
   /**
@@ -35,8 +35,8 @@ public final class Edge implements Comparable {
    *
    * @return the starting {@link Vertex} of the {@link Edge}
    */
-  public Vertex getStart() {
-    return this.start;
+  public Vertex getStartVertex() {
+    return this.startVertex;
   }
 
   /**
@@ -45,7 +45,7 @@ public final class Edge implements Comparable {
    * @return the ending {@link Vertex} of the {@link Edge}
    */
   public Vertex getEnd() {
-    return this.end;
+    return this.endVertex;
   }
 
   @Override
@@ -55,9 +55,9 @@ public final class Edge implements Comparable {
     if (o == null || getClass() != o.getClass())
       return false;
     Edge edge = (Edge) o;
-    return Double.compare(edge.getWeight(), getWeight()) == 0 && !(getStart() != null ?
-        !getStart().equals(edge.getStart()) :
-        edge.getStart() != null) && !(getEnd() != null ?
+    return Double.compare(edge.getWeight(), getWeight()) == 0 && !(getStartVertex() != null ?
+        !getStartVertex().equals(edge.getStartVertex()) :
+        edge.getStartVertex() != null) && !(getEnd() != null ?
         !getEnd().equals(edge.getEnd()) :
         edge.getEnd() != null);
 
@@ -65,7 +65,7 @@ public final class Edge implements Comparable {
 
   @Override
   public int hashCode() {
-    return Objects.hash(this.getStart(), this.getEnd(), this.getWeight());
+    return Objects.hash(this.getStartVertex(), this.getEnd(), this.getWeight());
   }
 
   @Override

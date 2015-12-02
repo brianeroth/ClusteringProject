@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8fde943-a578-4917-ad80-3e99f65a89ad" name="Default" comment="" />
+    <list default="true" id="e8fde943-a578-4917-ad80-3e99f65a89ad" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/Kruskal.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/Kruskal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Edge.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Edge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/UndirectedGraph.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/UndirectedGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Vertex.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Vertex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java" afterPath="$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java" />
+    </list>
     <ignored path="ClassProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,6 +40,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -69,12 +80,12 @@
         <option value="$PROJECT_DIR$/src/Utilities.java" />
         <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Tree/UndirectedTree.java" />
         <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Vertex.java" />
-        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java" />
-        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Edge.java" />
-        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java" />
         <option value="$PROJECT_DIR$/test/ProjectTest.java" />
+        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java" />
+        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Vertex.java" />
+        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Edge.java" />
         <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/UndirectedGraph.java" />
+        <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java" />
         <option value="$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/Kruskal.java" />
       </list>
     </option>
@@ -92,12 +103,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="378" />
+    <option name="x" value="-2" />
+    <option name="y" value="23" />
     <option name="width" value="1285" />
     <option name="height" value="773" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -707,8 +718,8 @@
     <option name="totallyTimeSpent" value="25283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="378" width="1285" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="23" width="1285" height="773" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -716,7 +727,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2713068" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2713068" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24824902" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -893,58 +904,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10309278">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7113402">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30927834">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="0.35502958">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#Vertex#0;class#Vertex#0" expanded="false" />
+            <element signature="method#Vertex#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getLabel#0;class#Vertex#0" expanded="false" />
+            <element signature="docComment;method#getAttributes#0;class#Vertex#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1340206">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.39940828">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/UndirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64349115">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/UnionFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64349115">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Algorithms/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62474227">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.3466872">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Graph/UndirectedGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/cs4800/clusteringproject/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5979381">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.77662724">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
           </folding>
         </state>
       </provider>

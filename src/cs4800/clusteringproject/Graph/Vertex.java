@@ -1,13 +1,11 @@
 package cs4800.clusteringproject.Graph;
 
-import java.util.ArrayList;
-
 /**
  * Represents a vertex in a graph
  */
 public final class Vertex {
   private final String label;
-  private final ArrayList<Double> attributes;
+  private final double[] attributes;
 
   /**
    * Constructor for a {@link Vertex}
@@ -15,7 +13,7 @@ public final class Vertex {
    * @param label the label of the vertex
    * @param attributes the vertex's attributes from low-level image processing algorithms
    */
-  public Vertex(String label, ArrayList<Double> attributes) {
+  public Vertex(String label, double[] attributes) {
     this.label = label;
     this.attributes = attributes;
   }
@@ -34,7 +32,7 @@ public final class Vertex {
    *
    * @return the attributes of the {@link Vertex}
    */
-  public ArrayList<Double> getAttributes() {
+  public double[] getAttributes() {
     return this.attributes;
   }
 }
