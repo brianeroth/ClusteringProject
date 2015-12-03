@@ -53,13 +53,13 @@ public final class Cluster {
   /**
    * Calculates the purity of a forest
    *
-   * @param forest the forest to be evaluated
+   * @param clusters the forest to be evaluated
    * @return the purity of the forest
    */
-  public static double calculatePurity(ArrayList<ArrayList<Vertex>> forest) {
+  public static double calculatePurity(ArrayList<ArrayList<Vertex>> clusters) {
     int numOfVertices = 0;
     int mostFrequentLabel = 0;
-    for (ArrayList<Vertex> vertices : forest) {
+    for (ArrayList<Vertex> vertices : clusters) {
       numOfVertices += vertices.size();
       mostFrequentLabel += findMostFrequentLabel(vertices);
     }

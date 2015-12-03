@@ -1,0 +1,14 @@
+3) 
+
+Pros: 
+- There will be an almost unique cluster for each item
+- More clusters to be created, meaning fewer variation inside a unique cluster
+
+Cons:
+- As the purity increases, that does not mean that is an optimal value of “k”
+- As the purity increases, there will be more clusters created
+- As the purity increases, there will be less similarity in the data
+
+4) 
+
+One method to choose the optimal “k” for the algorithm is to first imagine that the graph of the data is as smooth as possible. Then, find the point where the derivative of the graph is equal to “1.” It will appear near the point where the graph begins to increase more significantly. For example, in this specific run, it would be around the value “220” for purity

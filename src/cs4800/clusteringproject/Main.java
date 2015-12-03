@@ -14,10 +14,10 @@ import cs4800.clusteringproject.Graph.Vertex;
  */
 public final class Main {
   public static void main(String[] args) {
-    if (Integer.parseInt(args[1]) <= 1) {
+    int k = Integer.parseInt(args[1]);
+    if (k <= 1) {
       throw new IllegalArgumentException("K needs to be greater than 1.");
     }
-    int k = Integer.parseInt(args[1]);
     Graph minimumSpanningTree = Kruskal.run(new Graph(parseFile(args[0])));
     ArrayList<ArrayList<Vertex>> clusters = Cluster.kClustering(minimumSpanningTree, k);
     clusters.forEach(System.out::println);
