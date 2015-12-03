@@ -1,5 +1,7 @@
 package cs4800.clusteringproject.Graph;
 
+import java.util.Arrays;
+
 /**
  * Represents a vertex in a graph
  */
@@ -34,5 +36,12 @@ public final class Vertex {
    */
   public double[] getAttributes() {
     return this.attributes;
+  }
+
+  @Override
+  public String toString() {
+    return "(Vertex) " +
+              "label:" + this.label +
+              "data:"  + Arrays.toString(this.attributes);
   }
 }

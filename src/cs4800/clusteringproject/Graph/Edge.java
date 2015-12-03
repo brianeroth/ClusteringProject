@@ -11,6 +11,7 @@ public final class Edge implements Comparable {
 
   /**
    * Constructor for an {@link Edge}
+   *
    * @param weight the weight of the {@link Edge}
    * @param startVertex the starting {@link Vertex} of the {@link Edge}
    * @param endVertex the ending {@link Vertex} of the {@link Edge}
@@ -44,39 +45,28 @@ public final class Edge implements Comparable {
    *
    * @return the ending {@link Vertex} of the {@link Edge}
    */
-  public Vertex getEnd() {
+  public Vertex getEndVertex() {
     return this.endVertex;
   }
 
   @Override
   public boolean equals(Object o) {
-    if (this == o)
-      return true;
-    if (o == null || getClass() != o.getClass())
-      return false;
+    if (this == o) return true;
+    if (o == null || this.getClass() != o.getClass()) return false;
     Edge edge = (Edge) o;
-    return Double.compare(edge.getWeight(), getWeight()) == 0 && !(getStartVertex() != null ?
-        !getStartVertex().equals(edge.getStartVertex()) :
-        edge.getStartVertex() != null) && !(getEnd() != null ?
-        !getEnd().equals(edge.getEnd()) :
-        edge.getEnd() != null);
-
+    return Double.compare(edge.getWeight(), this.getWeight()) == 0 &&
+        Objects.equals(this.getStartVertex(), edge.getStartVertex()) &&
+        Objects.equals(this.getEndVertex(), edge.getEndVertex());
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(this.getStartVertex(), this.getEnd(), this.getWeight());
+    return Objects.hash(this.getWeight(), this.getStartVertex(), this.getEndVertex());
   }
 
   @Override
   public int compareTo(Object o) {
-    Edge o2 = (Edge) o;
-    if(this.getWeight() > o2.getWeight()) {
-      return 1;
-    } else if (this.getWeight() < o2.getWeight()) {
-      return -1;
-    } else {
-      return 0;
-    }
+    Edge o1 = (Edge) o;
+    return (int) this.getWeight() - (int) o1.getWeight();
   }
 }
